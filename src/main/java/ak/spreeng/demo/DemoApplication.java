@@ -80,6 +80,7 @@ public class DemoApplication {
         ResponseEntity<String> response4 = restTemplate.exchange(baseUrl + "/3", HttpMethod.DELETE, new HttpEntity<>(headers), String.class);
         responses.append(response4.getBody());
 
+        System.out.println("hay");
         System.out.println("hi");
         System.out.println(responses);
     }
